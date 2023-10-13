@@ -1,0 +1,50 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+
+</head>
+<link type="text/css" rel="stylesheet" href="css/login.css" />
+<script type="text/javascript" src="js/login.js" defer></script>
+<body>
+	
+<div class="div1">
+<img src="images/LOGIN.jpg" alt="登录">
+	
+<table >
+    <form action="" method="get" name="Form" onsubmit="return Login()">
+    	<tr>
+        	<td class="font" width="30%">用户名
+            </td>
+            <td width="70%">
+            	<input type="text" name="username" required class="form-style">
+            </td>
+        </tr>
+        <tr height="80px">
+        	<td class="font" width="30%">密码
+            </td>
+            <td width="70%">    
+            	<input type="password" name="psw" required class="form-style">
+            </td>
+        </tr>
+        <tr >
+        	<td class="font" width="30%">验证码
+            </td>
+            <td width="70%">
+            <input type="text" name="psw1" required class="form-style1" />
+            	<span id="code" title=""></span>
+            </td>
+        </tr>
+        <tr height="80px">
+        	<td></td>
+            <td><input type="submit"  value="登录" class="but-style"/></td>
+        </tr>
+
+        </form>
+	</table>
+    
+</div>
+</body>
+
+</html>

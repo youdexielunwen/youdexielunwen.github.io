@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用户注册界面</title>
+	<style>
+		tr>td{
+			background: #D9898A
+		}
+	
+	</style>
+</head>
+	
+<body>
+	<form action="register.php" method="post">
+		<table width="100%" height="90%">
+			<tr>
+				<td align="right">姓氏：</td>
+				<td>
+						<input type="text">(只能为字符，不能包含数字等特殊字符,不能为空)
+				</td>
+			</tr>
+			<tr>
+				<td align="right">登陆名：</td>
+				<td>
+						<input type="text">(只能包含a-z.0-9和下划线，不能为空)
+				</td>
+			</tr>
+			<tr>
+				<td align="right">密码：</td>
+				<td>
+						<input type="password">(包含至少6个a-z, 0-9, A-Z的字母组合,不可为空)
+				</td>
+			</tr>
+			<tr>
+				<td align="right">再次输入密码：</td>
+				<td>
+						<input type="password">(与上面密码一样)
+				</td>
+			</tr>
+			<tr>
+				<td align="right">电子邮箱：</td>
+				<td>
+						<input type="email" name="email">(必须包含@和.字符)
+				</td>
+			</tr>
+			<tr>
+				<td align="right">性别：</td>
+				<td>
+					<input type="radio" name="sex">男
+					<input type="radio" name="sex">女
+
+				</td>
+			</tr>
+			<tr>
+				<td align="right">爱好：</td>
+				<td>
+						<input type="checkbox" name="hobby">运动
+						<input type="checkbox" name="hobby">聊天
+						<input type="checkbox" name="hobby">玩游戏
+				</td>
+			</tr>
+			<tr>
+				<td align="right">出生日期：</td>
+				<td>
+					<input type="date">
+				</td>
+
+			</tr>
+			<tr>
+					<td><input type="reset" value="重填" align="right"></td>
+					<td><input type="submit" value="同意以下服务条款，提交注册信息"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td rowspan="2"><p style="font-size: 15px;font-weight:bold"><img src="平时作业3-pic-1.jpg" width="3%" height="3%">阅读淘宝网服务协议</p>
+					<p>
+					<textarea rows="5" cols="100%">欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用Taobao.com网站的各种工具和服本服务协议双方为淘宝与淘宝网用户，本服务协议具有合同效力。&#10;1.淘宝有义务在现有技术上维护整个网上交易平台的正常运行，并努力提升和改进技术，使用声网下零夏活动的顺利您在点击同意本协议之前，应当认真阅读本协议。&#10;2.请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款、法律适用和争议解决条款。免除或者限制责任的条款将以粗体下划线标识，您应重点阅读。如您对协议有任何疑问，可登录1688服务中心（网址为https://114.1688.com）向阿里巴巴客服咨询。&#10;3.当您按照注册页面提示填写信息、阅读并同意本协议且完成全部注册程序，或以任何方式进入1688平台并使用服务即表示您已充分阅读、理解并同意接受本协议的条款和条件。阅读本协议的过程中，如果您不同意本协议或其中任何条款约定，您应立即停止注册程序并停止使用服务。
+					</textarea>
+						</p>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

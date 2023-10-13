@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+	*{
+		margin:0px;
+		padding:0px;
+		
+	}
+	body{
+		background-color:#E8603C;
+	}
+	.div1{
+		background-color:white;
+		border-radius:50px;
+		width:800px;
+		height:450px;
+		position:absolute;
+		top:50%;
+		margin-top:-225px;
+		left:50%;
+		margin-left:-400px;
+	}
+	img{
+		width:400px;
+		height:300px;
+		position:absolute;
+		margin-top:70px;
+		left:30px;
+	}
+	table{
+		position: absolute;
+		left: 440px;
+		top: 150px;
+	}
+	.font{
+		font-size:18px;
+		font-weight:bolder;	
+	}
+	.form-style{
+		font-size:18px;	
+	    width:150px;	
+	}
+	.form-style1{
+		font-size:18px;	
+	    width:60px;	
+	}
+	.but-style{
+		width:100px; 
+		height:30px;
+		font-size:18px; 
+		border:hidden; 
+		border-radius:30px;
+		font-weight:bolder; 
+		color:white; 
+		background-color:#7698F1;
+	}
+    #code{  
+        color:#000000; 
+        background-color:#FFFFFF;     
+        font-size:18pt;   
+        padding:0px 0px 10px 10px;       
+        cursor:pointer;
+	}  /* CSS Document */
+

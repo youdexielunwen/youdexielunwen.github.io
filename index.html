@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>碳中和</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<link href="#css?family=Open+Sans" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- jQuery -->
+<!--start slider-->
+	<link href="css/camera.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+    <script type="text/javascript" src="js/camera.min.js"></script>
+    <script>
+		jQuery(function(){
+
+			jQuery('#camera_wrap_2').camera({
+				
+				loader: 'bar',
+				pagination: false,
+				
+				thumbnails: true
+			});
+		});
+	</script>
+<!--end slider-->
+<!--start gallery-->
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#gallerylist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#gallerylist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+<!--Add fancyBox main JS and CSS files-->
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+
+
+</head>
+<body>
+<!--star-wrap-->      
+	    <div class="wrap">	
+	    	<!--header--> 
+	      		<div class="header">
+	      				<!--start-logo-->
+				          <div class="logo">	
+				             <a href="index.html"><h1>碳<span>中和</span></h1></a>
+				          </div>
+				        <!--end-logo-->
+	      	 			<!--start-menu-->
+					  	<div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt= " " /></a>
+							<ul class="nav">
+								<li class="active"><a href="index.html">首页</a></li>
+								<li class="menu1 " id="tech-new">
+									<a href="about.html" id="tech_new" target="_blank">科技新闻</a>
+									<ul class="menu2" >
+										<li class="menu3"><a href="http://www.thjj.org/news-carbon.html#:~:text=" target="_blank">业界动态</a></li>
+										<li class="menu3"><a href="http://www.xinhuanet.com/2021-04/14/c_1127330385.htm" target="_blank">技术新闻</a></li>
+									</ul>
+								 </li>
+								
+								<li class="menu1"  id="tech_a">
+									<a href="科技分析.html">技术分析</a>
+									<ul class="menu2" >
+										<li class="menu3"><a href="https://zhuanlan.zhihu.com/p/433633202" target="_blank" id="百度">技术前景</a></li>
+										<li class="menu3"><a href="https://zhuanlan.zhihu.com/p/385986588" target="_blank" id="区块链">发展全局观</a></li>
+										<li class="menu3"><a href="https://www.gov.cn/zhengce/2021-10/24/content_5644613.htm" target="_blank" id="大数据">政策支持</a></li>
+									</ul>
+								  </li>
+								<li class="menu1" id="tech_told"><a href="portfolio.html" target="_blank">技术方向</a>
+								  <ul class="menu2" >
+									<li class="menu3"><a href="技术介绍1.html" target="_blank">研究方向</a></li>
+									<li class="menu3"><a href="技术介绍2.html" target="_blank">双碳目标</a></li>
+								</ul>
+							  </li>
+								
+								<li class="menu1" id="people"><a href="contact.html" 		 target="_blank">个人中心</a>
+									<ul class="menu2">
+										<li class="menu3"><a href="login.html">登录</a></li>
+										<li class="menu3"><a href="register.html">注册</a></li>
+									</ul>
+							 	</li>
+							<div class="clear"> </div>
+						    </ul>
+							
+							  
+
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				        </div>	
+				        <div class="clear"> </div>
+						<!--end-menu-->
+				            				
+				</div>
+				</div>
+		  <!--end-header-->
+<!--end wrap-->    
+
+<!-- start slider -->
+<div class="main-con">
+	<div class="slider">
+		<div class="color"> <span> </span></div>
+		<div class="wrap">
+		<div class="fluid_container">
+        <div class="camera_wrap camera_magenta_skin" id="camera_wrap_2">
+            <div data-thumb="images/bofang/sjl1.png" data-src="images/bofang/lrf1.png">
+                <div class="camera_caption fadeFromBottom">
+                    <h2>one</h2>
+                    <p>碳中和（carbon neutrality），节能减排术语。一般是指国家、企业、产品、活动或个人在一定时间内直接或间接产生的二氧化碳或温室气体排放总量，通过植树造林、节能减排等形式，以抵消自身产生的二氧化碳或温室气体排放量，实现正负抵消，达到相对“零排放”。</p>
+                </div>
+            </div>
+            <div data-thumb="images/bofang/sjl2.png" data-src="images/bofang/lrf2.png">
+                <div class="camera_caption fadeFromBottom">
+                  <h2>two</h2>
+                    <p>碳中和（carbon neutrality），节能减排术语。一般是指国家、企业、产品、活动或个人在一定时间内直接或间接产生的二氧化碳或温室气体排放总量，通过植树造林、节能减排等形式，以抵消自身产生的二氧化碳或温室气体排放量，实现正负抵消，达到相对“零排放”。 </p>
+                </div>
+            </div>
+            <div data-thumb="images/bofang/sjl3.png" data-src="images/bofang/lrf3.png">
+                <div class="camera_caption fadeFromBottom">
+                   <h2>three</h2>
+                    <p>“碳中和（carbon neutrality），节能减排术语。一般是指国家、企业、产品、活动或个人在一定时间内直接或间接产生的二氧化碳或温室气体排放总量，通过植树造林、节能减排等形式，以抵消自身产生的二氧化碳或温室气体排放量，实现正负抵消，达到相对“零排放”。</p>
+                </div>
+            </div>
+            <div data-thumb="images/bofang/sjl1.png" data-src="images/bofang/lrf1.png">
+                <div class="camera_caption fadeFromBottom">
+               	    <h2>four</h2>
+                    <p>碳中和（carbon neutrality），节能减排术语。一般是指国家、企业、产品、活动或个人在一定时间内直接或间接产生的二氧化碳或温室气体排放总量，通过植树造林、节能减排等形式，以抵消自身产生的二氧化碳或温室气体排放量，实现正负抵消，达到相对“零排放”。 </p>
+                </div>
+            </div>
+            <div data-thumb="images/bofang/sjl5.png" data-src="images/bofang/lrf5.png">
+                <div class="camera_caption fadeFromBottom">
+                    <h2>five</h2>
+                    <p>碳中和（carbon neutrality），节能减排术语。一般是指国家、企业、产品、活动或个人在一定时间内直接或间接产生的二氧化碳或温室气体排放总量，通过植树造林、节能减排等形式，以抵消自身产生的二氧化碳或温室气体排放量，实现正负抵消，达到相对“零排放”。</p>
+                </div>
+            </div>
+            <div data-thumb="images/bofang/sjl6.png" data-src="images/bofang/lrf6.png">
+                <div class="camera_caption fadeFromBottom">
+                  <h2>six</h2>
+                    <p>碳中和（carbon neutrality），节能减排术语。一般是指国家、企业、产品、活动或个人在一定时间内直接或间接产生的二氧化碳或温室气体排放总量，通过植树造林、节能减排等形式，以抵消自身产生的二氧化碳或温室气体排放量，实现正负抵消，达到相对“零排放”。</p>
+                </div>
+            </div>
+            
+        </div><!-- #camera_wrap_2 -->
+    </div><!-- .fluid_container -->
+    <div class="clear"></div>
+	</div>
+</div>
+<!--end slider-->
+<!--start home-page-con-->			  					     
+
+	
+<div class="wrap">
+
+	<table background="images/ditu.png" width="1000px" height="600px" align="center">
+  <thead>
+    <tr>
+      <th colspan="7">中国碳中和</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td><a href="images/aimg1.jpg" target="_blank">北京市</a></td>
+        <td><a href="images/aimg1.jpg" target="_blank">天津市</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">河北省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">山西省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">内蒙古</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">辽宁省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">吉林省</a></td>
+    </tr>
+        <tr>
+        <td><a href="images/aimg1.jpg" target="_blank">黑龙江</a></td>
+        <td><a href="images/aimg1.jpg" target="_blank">上海市</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">江苏省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">浙江省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">安徽省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">福建省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">江西省</a></td>
+    </tr>
+		<tr>
+        <td><a href="images/aimg1.jpg" target="_blank">山东省</a></td>
+        <td><a href="images/aimg1.jpg" target="_blank">河南省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">湖北省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">广东省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">湖南省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">广西省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">海南省</a></td>
+    </tr>
+		 <tr>
+        <td><a href="images/aimg1.jpg" target="_blank">重庆市</a></td>
+        <td><a href="images/aimg1.jpg" target="_blank">四川省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">贵州省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">云南省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">西藏</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">陕西省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">甘肃省</a></td>
+    </tr>
+		 <tr>
+        <td><a href="images/aimg1.jpg" target="_blank">青海省</a></td>
+        <td><a href="images/aimg1.jpg" target="_blank">宁夏省</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">新疆</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">台湾</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">香港</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">澳门</a></td>
+		<td><a href="images/aimg1.jpg" target="_blank">全国</a></td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>	
+	<div class="home-page-con">
+		<div class="wrap">
+		<div class="top-grids">
+			<div class="top-grid">
+				<div class="top-grid-info">
+					<img src="images/por.png" style="margin-top: 4px;" alt=" "/>
+					<h2>为什么要进行碳中和</h2>
+					<div class="clear"> </div>
+				</div>
+				<p>温室效应对地球造成不可估量的伤害，各国纷纷进行碳交易降低碳排放量。中国作为碳排放大国，对减缓全球碳排放起着巨大作用。 </p>
+				<a class="btn" href="images/tupian.png" target="_blank">了解更多</a>
+			</div>
+			<div class="top-grid">
+				<div class="top-grid-info">
+					<img src="images/wrok.png" alt=" "/>
+					<h2>碳中和研究背景</h2>
+					<div class="clear"> </div>
+				</div>
+				<p>随着技术的不断创新，世界经济飞速发展，社会生产力迅速增长，人们的生
+活水平日益提高。与此同时，人类在生产生活时大量消耗化石燃料致使二氧化碳、
+一氧化氮等温室气体的产量不断升高，导致温室效应，全球变暖、海平面上升、
+极端天气等环境问题，生物的生存环境正在面临着持续的破坏。</p>
+				<a class="btn" href="images/tupian.png" target="_blank">了解更多</a>
+			</div>
+			<div class="top-grid">
+				<div class="top-grid-info">
+					<img src="images/connect.png" alt=" "/>
+					<h2>碳中和实施目的 </h2>
+					<div class="clear"> </div>
+				</div>
+				<p>本项目旨在通过对碳排放量和碳排放价格进行可视化处理，实现对中国全国
+各省碳排放量的统计和对八个碳排放权交易市场试点的价格进行统计，进一步对
+价格走势进行分析，从而得到价格的波动规律。帮助政府和市场合理进行碳排放
+权定价、调动市场活跃度，帮助企业了解和获取相关碳排放权价格动态，合理规
+划碳交易 </p>
+				<a class="btn" href="images/tupian.png" target="_blank">了解更多</a>
+			</div>
+			<div class="clear"> </div>
+		</div>
+		
+			<div class="heading">
+				<h2>研究内容</h2>
+				<h6> </h6>
+					<div class="clear"> </div>
+			</div>
+			
+		
+	
+
+<!--end home-page-con-->
+<div class="main_btm">
+		
+			<!--start-mfp -->	
+			<div id="small-dialog1" class="mfp-hide">
+				<div class="pop_up">
+					<h2>内容1</h2>
+					<img src="images/tupian1.png" alt=" "/>
+					<p class="para">本项目进行碳排放权交易数据和能源排放数据的获取和对比。从各个试点
+的交易所和 eps 平台等网站中进行大量数据对比，从中选取较为完善的碳排放权
+交易数据和各个地区的能源排放数据，并通过网络爬虫技术获取不能直接下载的
+相关数据。能源排放数据内容在 excel 中显示</p>
+				</div>
+			</div>
+			<div id="small-dialog2" class="mfp-hide">
+				<div class="pop_up">
+					<h2>内容2</h2>
+					<img src="images/tupian2.png" alt=" "/>
+					<p class="para">本项目进行获取数据的整理分析。数据整理过程如图 4-2。
+					明确动态据
+                    分析并清楚认识到数据的类型（如碳排放交易的最高价、最低价、成交数量、成
+                    交金额、涨跌等）与其他数据之间的关联（如碳排放交易价格与成交数量之间、
+                    碳排放交易价格和碳排放量之间）并分析出涉及数据的可视化因素。</p>
+				</div>
+			</div>
+			<div id="small-dialog3" class="mfp-hide">
+				<div class="pop_up">
+					<h2>内容3</h2>
+					<img src="images/tupian3.png" alt=" "/>
+					<p class="para">本项目使用 python 语言中 matplotilb、plotly、bokeh、pyecharts 等多种动态
+可视化库，并在 PyCharm Community Edition 软件中制作各类图型，并将所有图
+表拼接在 html 文件中进行展示，高定制化完成实现碳排放和碳排放权交易价格
+的动态可视化的需要效果</p>
+				</div>
+			</div>
+			<div id="small-dialog4" class="mfp-hide">
+				<div class="pop_up">
+					<h2>内容4</h2>
+					<img src="images/tupian4.png" alt=" "/>
+					<p class="para">本项目对中国八个交易试点的收益率构建 GARCH 族模型，进行波动规律
+的实证分析。其研究的主要内容如下:首先通过描述性统计研究其非正态性分布
+及尖峰厚尾等基本的波动特征;接着利用 GARCH 模型研究碳排放权价格收益率
+的波动聚集性、条件方差受外部正负信息冲击影响的持久性、残差序列是否频繁
+的跳跃式波动以及外界利好或利空消息对碳排放权价格的波动影响是否长期存
+在;接着使用均值 GARCH 模型研究碳排放权价格收益率的波动是否与碳市场的
+风险相关，并分析其内在不一致的原因</p>
+				</div>
+			</div>
+			<!--end-mfp -->	
+		<!--start-content-->
+			<div class="gallery">
+					<div class="clear"> </div>
+					<div class="container">
+					
+			<div id="gallerylist">
+			
+				<div class="gallerylist-wrapper">				
+					<a class="popup-with-zoom-anim" href="#small-dialog1">
+						<img src="images/tupian1.png"  alt="Image 1"/>
+						<span><img src="images/plus.png" alt=" "/> </span>
+						<div class="desc">
+						 	<h2>JAVA</h2>
+						 	<h3>May,1995 </h3>
+						</div>
+					</a>
+				</div>
+				<div class="gallerylist-wrapper">				
+					<a class="popup-with-zoom-anim" href="#small-dialog2">
+						<img src="images/tupian2.png"  alt="Image 2"/>
+						<span><img src="images/plus.png" alt=" "/> </span>
+						<div class="desc">
+						 	<h2>HTML5</h2>
+						 	<h3>January 22,2008</h3>
+						</div>
+					</a>
+				</div>
+				<div class="gallerylist-wrapper">				
+					<a class="popup-with-zoom-anim" href="#small-dialog3">
+						<img src="images/tupian3.png"  alt="Image 3" />
+						<span><img src="images/plus.png" alt=" "/> </span>
+						<div class="desc">
+						 	<h2>css3</h2>
+						 	<h3>MAY 23,2001</h3>
+						</div>
+					</a>
+				</div>
+				<div class="gallerylist-wrapper">				
+					<a class="popup-with-zoom-anim" href="#small-dialog4">
+						<img src="images/tupian4.png"  alt="Image 4" />
+						<span><img src="images/plus.png" alt=" "/> </span>
+						<div class="desc">
+						 	<h2>C++</h2>
+						 	<h3>1983</h3>
+						</div>
+					</a>
+				</div>
+
+			</div>																																							
+		</div>
+	</div><!-- container -->
+	<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+	<script type="text/javascript">$('body').flipLightBox()</script>
+	<div class="clear"> </div>
+	</div>
+
+</div>
+</div>
+<!--End-gallery-->
+<!--start footer-->
+<div class="footer">
+	<div class="footer-main wrap">
+	<div class="footer-grids">
+		<div class="fgrid">
+			<h3>关于我们</h3>
+			<p>碳中和版权隶属于辽宁师范大学李瑞峰和孙佳乐所有，本网站旨在为碳中和提供前沿的科技信息咨询以及技术信息。</p>
+			<p>整体而言，这个网站旨在为用户提供全面、多样化的内容，帮助他们了解世界的最新动态，探索各种感兴趣的话题，并与其他读者分享和交流。无论是获取新闻信息、深入思考问题，还是参与互动讨论，这个网站都为用户提供了一个丰富的平台。</p>
+		</div>
+		
+		<div class="fgrid">
+			<h3>网页评论</h3>
+				<div>
+					<p><a href="#">@大头</a> 这个网站是谁设计的呀？太厉害了吧:)</p>
+					<a href="#">about 1 hour ago</a>
+				</div>
+				<div>
+					<p><a href="#">@撮箕</a>在这里能了解到很多信息</p>
+					<a href="#">about 2 hour ago</a>
+				</div>
+				<div>
+					<p>Follow <a href="#">@辽宁师范</a></p>
+				</div>
+		</div>
+		<div class="fgrid">
+			<h3>联系我们</h3>
+			<p>如果想要和我一起开发本网站或者有任何问题，请联系计算机与人工智能学院2021级李瑞峰和孙佳乐，我们很乐意为您解答您的疑惑。</p>
+			<a href="mailto:2659648250@qq.com"><p>212699457@qq.com</p></a>
+			<h4>15824968854</h4>
+			<div class="social-icons">
+			  <ul>
+				<li>
+				  <a href="https://im.qq.com/index/" target="_blank">
+					<img src="images/qq_icon.png" alt="QQ">
+				  </a>
+				</li>
+				<li>
+				  <a href="https://wx.qq.com/" target="_blank">
+					<img src="images/wechat_icon.png" alt="微信">
+				  </a>
+				  
+				</li>
+				<li>
+				  <a href="https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2F&domain=weibo.com&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F114.0.0.0%20Safari%2F537.36%20Edg%2F114.0.1823.41&_rand=1686384012838&sudaref=" target="_blank">
+					<img src="images/weibo_icon.png" alt="微博">
+				  </a>
+				</li>
+				<li>
+				  <a href="https://www.xiaohongshu.com/explore" target="_blank">
+					<img src="images/xiaohongshu_icon.png" alt="小红书">
+				  </a>
+				</li>
+			  </ul>
+			</div>
+
+		</div>
+		<div class="clear"> </div>
+	</div>
+</div>
+</div>
+<!--end footer-->
+<div class="copy-right">
+			<div class="wrap">
+				<div class="copy-right-left">
+					<p>©碳中和归 辽宁师范版权所有<br/>
+    关于我们：|联系我们|&nbsp;|相关介绍|&nbsp;|意见反馈|<br />
+    |合作伙伴|&nbsp;|版权|&nbsp;|动态|&nbsp;|网站顾问|</p>
+				</div>
+			</div>
+			</div>
+</div>
+</body>
+</html>

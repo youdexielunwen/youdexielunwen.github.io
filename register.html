@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册</title>
+<link type="text/css" rel="stylesheet" href="register.css" />
+<script type="text/javascript" src="register.js"></script>
+	<style>
+		@charset "utf-8";
+/* CSS Document */
+
+	*{
+		margin:0px;
+		padding:0px;
+		
+	}
+	body{
+		background-color:#E8603C;
+	}
+	.div1{
+		background-color:white;
+		border-radius:50px;
+		width:800px;
+		height:450px;
+		position:absolute;
+		top:50%;
+		margin-top:-225px;
+		left:50%;
+		margin-left:-400px;
+	}
+	img{
+		width:400px;
+		height:300px;
+		position:absolute;
+		margin-top:70px;
+		left:30px;
+	}
+	table{
+		position: absolute;
+		left: 440px;
+		top: 150px;
+	}
+	.font{
+		font-size:18px;
+		font-weight:bolder;	
+	}
+	.form-style{
+		font-size:18px;	
+	    width:150px;	
+	}
+	.form-style1{
+		font-size:18px;	
+	    width:60px;	
+	}
+	.but-style{
+		width:100px; 
+		height:30px;
+		font-size:18px; 
+		border:hidden; 
+		border-radius:30px;
+		font-weight:bolder; 
+		color:white; 
+		background-color:#F2B19C;
+	}
+    #code{  
+        color:#000000; 
+        background-color:#FFFFFF;     
+        font-size:18pt;   
+        padding:0px 0px 10px 10px;       
+        cursor:pointer;
+	}  /* CSS Document */
+
+
+	</style>
+</head>
+<body onload="ff()">
+	<script>
+		// JavaScript Document
+var code = 'OPA3';
+
+document.getElementById("code").onclick = changeImg;
+
+function changeImg() {
+    var arrays = [
+        '1', '2', '3', '4', '5', '6', '7', '8', '9', '0',
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+        'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+        'u', 'v', 'w', 'x', 'y', 'z',
+        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+        'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+        'U', 'V', 'W', 'X', 'Y', 'Z'
+    ];
+
+    code = ' ';
+    for (var i = 0; i < 4; i++) {
+        var r = Math.floor(Math.random() * arrays.length);
+        code += arrays[r];
+    }
+
+    document.getElementById('code').innerHTML = code;
+}
+
+var sheng = ["辽宁省", "北京市", "山东省"];
+var chengshi = [
+    ["沈阳", "大连", "鞍山", "葫芦岛"],
+    ["顺义区", "海淀区", "密云区", "朝阳区"],
+    ["青岛", "济南", "淄博", "烟台"]
+];
+// eslint-disable-next-line
+function ff() {
+    var ele = document.getElementById("sel1");
+// eslint-disable-next-line
+	console.log(ele.options);
+
+    for (var k = 0; k < sheng.length; k++) {
+        var op1 = new Option(sheng[k], k);
+        ele.options.add(op1);
+    }
+}
+// eslint-disable-next-line
+function cc() {
+    var ele = document.getElementById("sel1");
+    var ele2 = document.getElementById("sel2");
+    var kk = ele.selectedIndex;
+    kk = ele.options[kk].value;
+    var arr = chengshi[kk];
+
+    ele2.options.length = arr.length + 1;
+
+    for (var k = 0; k < arr.length; k++) {
+        var op = new Option(arr[k], kk + "" + k);
+        ele2.options.add(op);
+    }
+}
+
+	</script>
+<div class="div1">
+    <img src="images/register.jpg" style="margin-left: -25px;">
+    <table>
+        <form action="" method="get">
+            <tr>
+                <td class="font" width="30%">用户名</td>
+                <td width="70%">
+                    <input type="text" placeholder="请输入用户名" name="username" class="form-style" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="font" width="30%">设置密码</td>
+                <td width="70%">
+                    <input type="password" placeholder="请输入密码" name="psw" class="form-style" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="font" width="30%">确认密码</td>
+                <td width="70%">
+                    <input type="password" placeholder="请输入密码" name="confirmPsw" class="form-style" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="font" width="30%">选择地区</td>
+                <td width="70%">
+                    <select name="shengfen" size="1" id="sel1" onchange="cc()" class="form-style">
+                        <option selected="selected">-省份-</option>
+                    </select>
+                    <select name="shi" size="1" id="sel2" class="form-style">
+                        <option selected="selected">-城市-</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="font" width="30%">验证码</td>
+                <td width="70%">
+                    <input type="text" placeholder=" " name="verificationCode" class="form-style1" required>
+                    <span id="code" title=" "></span>
+                </td>
+            </tr>
+            <tr height="80px">
+                <td></td>
+                <td>
+                    <input type="button" value="注册" class="but-style" onclick="alert('注册成功')">
+                </td>
+            </tr>
+        </form>
+    </table>
+</div>
+</body>
+</html>
